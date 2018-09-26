@@ -1,5 +1,9 @@
 /* eslint-env jasmine */
 const Request = require('request');
+const server2 = require('../bin/www');
+
+function start() { return server2; }
+start();
 
 describe('get categories', () => {
   const data = {};

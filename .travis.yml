@@ -9,7 +9,6 @@ before_script:
  - npm install
  - npm install jasmine -g
  - npm run-script build
- - npm start
 after_script:
  
 after_success:
