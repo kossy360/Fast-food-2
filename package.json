@@ -2,7 +2,7 @@
   "name": "fast-food-fast",
   "version": "1.0.0",
   "description": "api endpoints",
-  "main": "./build/server.js",
+  "main": "./bin/www",
   "scripts": {
     "build": "babel javascripts -d build",
     "start": "node ./bin/www",
