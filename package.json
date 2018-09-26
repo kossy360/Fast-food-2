@@ -7,7 +7,8 @@
     "build": "babel javascripts -d build",
     "start": "node ./bin/www",
     "start1": "nodemon",
-    "test": "jasmine",
+    "test": "nyc jasmine",
+    "coverage": "nyc report --reporter=text-lcov | coveralls",
     "test1": "istanbul cover node_modules/jasmine-node/bin/jasmine-node"
   },
   "repository": {
@@ -52,6 +53,7 @@
     "karma-cli": "^0.1.2",
     "karma-jasmine": "^0.3.7",
     "karma-phantomjs-launcher": "^1.0.0",
-    "nodemon": "^1.18.4"
+    "nodemon": "^1.18.4",
+    "nyc": "^13.0.1"
   }
 }
