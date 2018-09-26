@@ -8,7 +8,7 @@
     "start": "node ./bin/www",
     "start1": "nodemon",
     "test": "jasmine",
-    "test1": "karma start karma.conf.js — single-run"
+    "test1": "istanbul cover node_modules/jasmine-node/bin/jasmine-node"
   },
   "repository": {
     "type": "git",
@@ -29,6 +29,7 @@
     "debug": "~2.6.9",
     "express": "~4.16.0",
     "express-validator": "^5.3.0",
+    "grunt-contrib-jshint": "^2.0.0",
     "http-errors": "~1.6.2",
     "jade": "^1.11.0",
     "morgan": "~1.9.0",
@@ -42,14 +43,15 @@
     "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
     "babel-plugin-transform-export-extensions": "^6.22.0",
     "babel-preset-env": "^1.7.0",
+    "coveralls": "^3.0.2",
     "eslint": "^5.5.0",
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-import": "^2.14.0",
-    "nodemon": "^1.18.4",
     "jasmine-core": "^2.4.1",
     "karma": "^0.13.22",
     "karma-cli": "^0.1.2",
+    "karma-jasmine": "^0.3.7",
     "karma-phantomjs-launcher": "^1.0.0",
-    "karma-jasmine": "^0.3.7"
+    "nodemon": "^1.18.4"
   }
 }
