@@ -77,7 +77,7 @@ const storage = {
   category: ['snacks', 'continental', 'soft-drinks'],
 };
 
-function find(flag, id) {
+const find = (flag, id) => {
   function check() {
     switch (flag) {
       case 'items': return storage.items;
@@ -94,9 +94,9 @@ function find(flag, id) {
   while (i < array.length && array[i].id !== id) i += 1;
   if (i === array.length) return false;
   return i;
-}
+};
 
-function replace(flag, a, b, callback) {
+const replace = (flag, a, b, callback) => {
   let pos;
   let i = 0;
   switch (flag) {
@@ -126,9 +126,9 @@ function replace(flag, a, b, callback) {
       return true;
     default: callback(createError(404, 'wrong request')); return false;
   }
-}
+};
 
-function get(flag, x, callback) {
+const get = (flag, x, callback) => {
   let i = 0;
   switch (flag) {
     case 'items':
@@ -148,9 +148,9 @@ function get(flag, x, callback) {
       return storage.orders;
     default: callback(createError(404, 'not found')); return 0;
   }
-}
+};
 
-function deleter(flag, id, id2, callback) {
+const deleter = (flag, id, id2, callback) => {
   let i = 0;
   switch (flag) {
     case 'items':
@@ -175,9 +175,9 @@ function deleter(flag, id, id2, callback) {
       return true;
     default: callback(createError(403, 'unsuccessful')); return 0;
   }
-}
+};
 
-function add(flag, a, b, callback) {
+const add = (flag, a, b, callback) => {
   switch (flag) {
     case 'items':
       storage.items.push(a);
@@ -197,7 +197,7 @@ function add(flag, a, b, callback) {
       return true;
     default: callback(createError(404, 'sorry...can\'t figure out know where to store this')); return 0;
   }
-}
+};
 
 export {
   storage, add, deleter, replace, get,

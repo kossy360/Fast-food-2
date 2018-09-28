@@ -53,11 +53,5 @@ router.delete('/order/:orderId/:userId', (req, res, next) => {
   });
   if (x) res.status(200).send();
 });
-router.delete('/:userId/profile', (req, res, next) => {
-  const x = deleter('user', req.params.userId, (err) => {
-    if (err) next(err);
-  });
-  if (x) res.status(200).send();
-});
 
 module.exports = router;

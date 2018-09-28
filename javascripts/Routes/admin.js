@@ -57,7 +57,7 @@ router.delete('/category/:name', (req, res, next) => {
   });
   if (x) res.status(200).send();
 });
-router.delete('/items/:itemId', (req, res, next) => { console.log(55555)
+router.delete('/items/:itemId', (req, res, next) => {
   const x = deleter('items', req.params.itemId, 0, (err) => {
     if (err) next(err);
   });

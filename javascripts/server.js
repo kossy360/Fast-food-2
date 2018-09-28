@@ -4,9 +4,9 @@ import path from 'path';
 import cookieParser from 'cookie-parser';
 import logger from 'morgan';
 
-import indexRouter from './index';
-import usersRouter from './users';
-import adminRouter from './admin';
+import indexRouter from './Routes/index';
+import usersRouter from './Routes/users';
+import adminRouter from './Routes/admin';
 
 const app = express();
 
