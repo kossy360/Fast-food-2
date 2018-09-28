@@ -1,0 +1,388 @@
+body {
+  width: 100%;
+  background-color: #f3ebdc;
+  margin: 0 auto;
+  min-width: 400px;
+  overflow-x: hidden;
+}
+
+p, a, li, ul, div, section {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: inherit;
+}
+
+.hide {
+  display: none;
+}
+
+.navContainer {
+  height: 75px;
+  border-bottom: 1px solid orange;
+}
+
+.rightItems {
+  float: right;
+  width: 50%;
+  width: 350px;
+  height: 100%;
+}
+
+.navList {
+  list-style: none;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+.navList li {
+  float: right;
+  margin-left: 20px;
+  width: 60px;
+  height: 100%;
+  text-align: center;
+}
+
+.sign {
+  text-align: center;
+  position: relative;
+  height: 100%;
+  top: px;
+  margin: 0;
+  
+}
+
+.sign a{
+  position: relative;
+  font: normal normal 15px/1 "artifika", Helvetica, sans-serif;
+}
+
+.itemCount {
+  position: relative;
+  background-color: red;
+  padding: 1px;
+  z-index: 1;
+  color: white;
+  font: normal normal 11px/1 "artifika", Helvetica, sans-serif;
+  top: -67px;
+  left: 43px;
+  border-radius: 100%;
+  width: 13px;
+  height: 13px;
+  text-align: center;
+  margin: 0; 
+}
+
+.cartButton {
+  
+  position: relative;
+  height: 100%;
+  top: px;
+  margin: 0;
+}
+
+.navName{
+  font: normal normal 15px/1 "artifika", Helvetica, sans-serif;
+}
+
+svg {
+  width: 45px;
+  height: 45px;
+  margin: 7px 5px 0px 5px;
+  color: orange;
+}
+
+.titleContainer {
+  position: relative;
+  background: #d84902;
+  border: 1px solid #d84902;
+  width: 100%;
+  height: 300px;
+}
+
+.heading {
+  font: normal normal bold 50px/1 "artifika", Helvetica, sans-serif;
+  text-align: center;
+  height: 50px;
+  margin-top: 125px;  
+}
+
+.profile {
+  border: 1px solid orange;
+}
+
+#menu {
+  max-width: 1200px;
+  min-width: 400px;
+  margin: 0 auto;
+  width: 100%;
+  text-align: centedr;
+}
+
+.menuHead {
+  margin-top: 50px;
+  height: 60px;
+}
+
+.categorySwitch1 {
+  float: left;
+  width: 20px;
+  height: 20px;
+  margin: 16px 0px 0px 15px;
+  border-bottom: solid #d84902;
+  border-left: solid #d84902;
+  -webkit-transform: rotateZ(455deg);
+  transform: rotateZ(45deg);
+}
+
+.categorySwitch2 {
+  float: right;
+  width: 20px;
+  height: 20px;
+  margin: 16px 16px 0px 0px;
+  border-bottom: solid #d84902;
+  border-left: solid #d84902;
+  -webkit-transform: rotateZ(-135deg);
+  transform: rotateZ(-135deg);
+}
+
+.nameContainer2 {
+  position: absolute;
+  text-align: center;
+  margin: 0 auto;
+  width: 50%;
+  height: 60px;
+  left: 25%;
+}
+
+.nameContainer2 p {
+  margin-top: 12px;
+  font: normal normal bold 30px/1 "artifika", Helvetica, sans-serif;
+text-align: center;
+-o-text-overflow: ellipsis;
+text-overflow: ellipsis;
+letter-spacing: 1px;
+}
+
+.menuBody {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center; 
+  border-top: 1px solid #baf880;
+  border-bottom:  1px solid #baf880;
+}
+
+.menuBody .selected {
+  background-color: #baf880;
+  transition: all 0.5s linear;
+}
+
+.itemDiv {
+  display: inline-block;
+  text-align: center;
+  width: 325px;
+  height: 325px;
+  margin: 0px 5px 25px 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 5px 1px orange ;
+  box-shadow: 0 0 5px 1px orangered ;
+  transition: all 0.5s linear;
+}
+
+.arranger {
+  display: inline-block;
+  width: 325px;
+  margin: 0px 5px 25px 10px;
+  }
+
+
+.itemDiv img {
+  height:150px;
+  margin-top: 60px;
+}
+
+.itemName {
+  margin-top: 20px;
+font: normal normal bold 25px/1 "artifika", Helvetica, sans-serif;
+text-align: center;
+-o-text-overflow: ellipsis;
+text-overflow: ellipsis;
+letter-spacing: 1px;
+}
+
+.itemPrice {
+  margin-top: 10px;
+  font: normal normal 20px/1 "artifika", Helvetica, sans-serif;
+  text-align: center;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  letter-spacing: 1px;
+}
+
+.cartItems {
+  position: relative;
+  background-color: orange;
+  z-index: 1;
+  width: 350px;
+  border-radius: 10px;
+  -webkit-box-shadow: 2px 2px 7px 1px rgba(0,0,0,0.3) ;
+box-shadow: 2px 2px 7px 1px rgba(0,0,0,0.3) ;
+}
+
+.asDiv {
+  border-bottom: 1px solid red;
+  text-align: center;
+}
+
+.cartNameDiv {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  margin: 20px 0px 20px 5px;
+  left: -10px;
+}
+
+.nameImg {
+  height: 70px;
+  display: block;
+}
+
+.nameP {
+  font: normal normal 20px/1 "artifika", Helvetica, sans-serif;
+text-align: center;
+-o-text-overflow: ellipsis;
+text-overflow: ellipsis;
+letter-spacing: 1px;
+}
+
+.qty {
+  position: relative;
+  text-align: center;
+  display: inline-block;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  height: 30px;
+  left: 0px;
+  top: -37px;
+  overflow: hidden;
+}
+
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+.qtyInput {
+  height: 100%;
+  background-color: inherit;
+  border: none;
+  border-left: 1px solid;
+  border-right: 1px solid;
+  text-align: center;
+  width: 35px;  
+   font: normal normal 20px/1 "artifika", Helvetica, sans-serif;
+}
+
+.qtyBtn {
+  height: 100%;
+   font: normal normal 25px/1 "artifika", Helvetica, sans-serif;
+  border: none;
+  background-color: inherit;
+}
+
+.closeBtn {
+  float: right;
+  padding: 0;
+  background-color: inherit;
+  border: none;;
+  width: 50px;
+  height: 50px;
+  font: normal normal 35px/1 "artifika", Helvetica, sans-serif;
+-o-text-overflow: ellipsis;
+text-overflow: ellipsis;
+letter-spacing: 1px;
+}
+
+.cartPrice {
+  position: relative;
+  display: inline-block;
+  width:100px;
+  font: normal normal 25px/1 "artifika", Helvetica, sans-serif;
+  top: -42px;
+  text-align: center;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  letter-spacing: 1px;
+}
+
+.cartItemsDefault {
+  font: normal normal 20px/1 "artifika", Helvetica, sans-serif;
+  padding: 10px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.orderTotal {
+  font: normal normal 25px/1 "artifika", Helvetica, sans-serif;
+  top: -34px;
+  margin-top: 15px;
+  text-align: center;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  letter-spacing: 1px;
+  transition: all 0.3s linear;
+}
+
+.chkOut {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font: normal normal 25px/1 "artifika", Helvetica, sans-serif;
+  width: 50%;
+  margin-left: 25%;
+  height: 50px;
+  background-color: black;
+  color: orange;
+  border: 1px solid #018dc4;
+-webkit-border-radius: 22px;
+border-radius: 22px;
+}
+
+.showCase {
+  width: 100%;
+  height: 250px;
+  background-image: url("https://drive.google.com/uc?id=11LJRXntPf2wH_dYimNE5YEj2wcPTlO8z");
+  background-size: auto 250px;
+  
+}
+footer {
+  position: static;
+  border: 1px solid #353333;
+  margin-top: 0;
+  height: 250px;
+  text-align: center;
+  background-color: #353333
+}
+
+.iconContainer {
+  width: 500px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.iconContainer svg {
+  margin: 10px;
+}
+
+.footerName {
+  font: normal normal bold 30px/1 "artifika", Helvetica, sans-serif;
+  margin-top: 50px;
+  color: orange;
+}
+

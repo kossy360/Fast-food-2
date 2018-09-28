@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fast Food Fast | Home</title>
+    <link rel="stylesheet" href="../css/home.css">
+</head>
+
+<body>
+    <div class="titleContainer">
+        <p class="heading">Fast.Food.Fast</p>
+    </div>
+    <div class='navContainer '>
+        <div class="rightItems">
+            <ul class="navList">
+                <li>
+                    <a href="./singup.html">
+                        <div class='sign'>
+                            <svg viewBox="0 0 24 24">
+                                <path fill="#000000" d="M15,14C12.33,14 7,15.33 7,18V20H23V18C23,15.33 17.67,14 15,14M6,10V7H4V10H1V12H4V15H6V12H9V10M15,12A4,4 0 0,0 19,8A4,4 0 0,0 15,4A4,4 0 0,0 11,8A4,4 0 0,0 15,12Z" />
+                            </svg>
+                            <p class="navName">Signup</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="./signin">
+                        <div class='sign'>
+                            <svg viewBox="0 0 24 24">
+                                <path fill="#000000" d="M10,17.25V14H3V10H10V6.75L15.25,12L10,17.25M8,2H17A2,2 0 0,1 19,4V20A2,2 0 0,1 17,22H8A2,2 0 0,1 6,20V16H8V20H17V4H8V8H6V4A2,2 0 0,1 8,2Z" />
+                            </svg>
+                            <p class="navName">SignIn</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="pName hide">
+                    <div class="pName">
+                        <svg viewBox="0 0 24 24">
+                            <path fill="#000000" d="M12,4A4,4 0 0,1 16,8A4,4 0 0,1 12,12A4,4 0 0,1 8,8A4,4 0 0,1 12,4M12,14C16.42,14 20,15.79 20,18V20H4V18C4,15.79 7.58,14 12,14M7,22H9V24H7V22M11,22H13V24H11V22M15,22H17V24H15V22Z" />
+                        </svg>
+                        <p class="pNameName navName">cart</p>
+                    </div>
+                </li>
+                <li class="cart">
+                    <div class='cartButton'>
+                        <svg viewBox="0 0 24 24">
+                            <path fill="#000000" d="M17,18A2,2 0 0,1 19,20A2,2 0 0,1 17,22C15.89,22 15,21.1 15,20C15,18.89 15.89,18 17,18M1,2H4.27L5.21,4H20A1,1 0 0,1 21,5C21,5.17 20.95,5.34 20.88,5.5L17.3,11.97C16.96,12.58 16.3,13 15.55,13H8.1L7.2,14.63L7.17,14.75A0.25,0.25 0 0,0 7.42,15H19V17H7C5.89,17 5,16.1 5,15C5,14.65 5.09,14.32 5.24,14.04L6.6,11.59L3,4H1V2M7,18A2,2 0 0,1 9,20A2,2 0 0,1 7,22C5.89,22 5,21.1 5,20C5,18.89 5.89,18 7,18M16,11L18.78,6H6.14L8.5,11H16Z" />
+                        </svg>
+                        <p class="navName">cart</p>
+                    </div>
+                    <p class="itemCount">0</p>
+                </li>
+            </ul>
+            <div class="cartItems hide">
+                <div class="cartItemsDefault">
+                    <p>no items to show, add items to cart</p>
+                </div>
+                <p class="orderTotal" class="hide"></p>
+                <button class="chkOut hide">check out</button>
+            </div>
+        </div>
+    </div>
+    <div class="profile hide cc">
+        <div class="pEdit">edit profile</div>
+        <div class="orderHis">order history</div>
+        <div class="lgOut">log out</div>
+    </div>
+    <div class="orderHistory"></div>
+    <div class="cartItems hide">
+        <div class="cartItemsDefault">
+            <p>no items to show, add items to cart</p>
+        </div>
+        <p class="orderTotal" class="hide"></p>
+        <button class="chkOut hide">check out</button>
+    </div>
+    <div class="checkOut">
+        <div class="adress"></div>
+        <div class="payMethod"></div>
+    </div>
+    <section id="menu">
+        <div class="menuHead">
+            <header>
+                <p class="categorySwitch1"></p>
+                <div class="nameContainer cc"></div>
+                <p class="categorySwitch2"></p>
+            </header>
+        </div>
+        <div class="menuBody"></div>
+    </section>
+    <div class="showCase"></div>
+    <footer>
+        <div class="iconContainer"><svg viewBox="0 0 24 24">
+                <path fill="grey" d="M17,2V2H17V6H15C14.31,6 14,6.81 14,75V10H14L17,10V14H14V22H10V14H7V10H10V6A4,4 0 0,1 14,2H17Z" />
+            </svg>
+            <svg viewBox="0 0 24 24">
+                <path fill="grey" d="M22.46,6C21.69,6.35 20.86,6.58 20,6.69C20.88,6.16 21.56,5.32 21.88,4.31C21.05,4.81 20.13,5.16 19.16,5.36C18.37,4.5 17.26,4 16,4C13.65,4 11.73,5.92 11.73,8.29C11.73,8.63 11.77,8.96 11.84,9.27C8.28,9.09 5.11,7.38 3,4.79C2.63,5.42 2.42,6.16 2.42,6.94C2.42,8.43 3.17,9.75 4.33,10.5C3.62,10.5 2.96,10.3 2.38,10C2.38,10 2.38,10 2.38,10.03C2.38,12.11 3.86,13.85 5.82,14.24C5.46,14.34 5.08,14.39 4.69,14.39C4.42,14.39 4.15,14.36 3.89,14.31C4.43,16 6,17.26 7.89,17.29C6.43,18.45 4.58,19.13 2.56,19.13C2.22,19.13 1.88,19.11 1.54,19.07C3.44,20.29 5.7,21 8.12,21C16,21 20.33,14.46 20.33,8.79C20.33,8.6 20.33,8.42 20.32,8.23C21.16,7.63 21.88,6.87 22.46,6Z" />
+            </svg>
+            <svg viewBox="0 0 24 24">
+                <path fill="grey" d="M7.8,2H16.2C19.4,2 22,4.6 22,7.8V16.2A5.8,5.8 0 0,1 16.2,22H7.8C4.6,22 2,19.4 2,16.2V7.8A5.8,5.8 0 0,1 7.8,2M7.6,4A3.6,3.6 0 0,0 4,7.6V16.4C4,18.39 5.61,20 7.6,20H16.4A3.6,3.6 0 0,0 20,16.4V7.6C20,5.61 18.39,4 16.4,4H7.6M17.25,5.5A1.25,1.25 0 0,1 18.5,6.75A1.25,1.25 0 0,1 17.25,8A1.25,1.25 0 0,1 16,6.75A1.25,1.25 0 0,1 17.25,5.5M12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9Z" />
+            </svg>
+            <svg viewBox="0 0 24 24">
+                <path fill="grey" d="M23,11H21V9H19V11H17V13H19V15H21V13H23M8,11V13.4H12C11.8,14.4 10.8,16.4 8,16.4C5.6,16.4 3.7,14.4 3.7,12C3.7,9.6 5.6,7.6 8,7.6C9.4,7.6 10.3,8.2 10.8,8.7L12.7,6.9C11.5,5.7 9.9,5 8,5C4.1,5 1,8.1 1,12C1,15.9 4.1,19 8,19C12,19 14.7,16.2 14.7,12.2C14.7,11.7 14.7,11.4 14.6,11H8Z" />
+            </svg>
+        </div>
+        <p class="footerName">Fast.Food.Fast</p>
+        <div class="footerFoot"></div>
+    </footer>
+    <script type="module" src="../javascripts/user.js"></script>
+</body>
+
+</html>
