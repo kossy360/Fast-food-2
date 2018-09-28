@@ -21,7 +21,7 @@ Codes in this project are written in ^ES6 and incoporate several new features li
 
 ## Deployment
 
-Add additional notes about how to deploy this on a live system
+Follow this link to view https://kossy360.github.io/Fast-food-2/main/index.html
 
 ## Built With
 
