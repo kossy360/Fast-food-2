@@ -2,6 +2,7 @@
 [![Build Status](https://travis-ci.org/kossy360/Fast-food-2.svg?branch=develop)](https://travis-ci.org/kossy360/Fast-food-2)
 [![Coverage Status](https://coveralls.io/repos/github/kossy360/Fast-food-2/badge.svg?branch=develop)](https://coveralls.io/github/kossy360/Fast-food-2?branch=develop)
 [![Maintainability](https://api.codeclimate.com/v1/badges/1a9421df21ac7f52c2c0/maintainability)](https://codeclimate.com/github/kossy360/Fast-food-2/maintainability)
+
 This is the main development branch for api endpoints
 
 ### Prerequisites
