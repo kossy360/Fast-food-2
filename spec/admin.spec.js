@@ -1,8 +1,8 @@
 /* eslint-env jasmine */
-const Request = require('request');
-const server2 = require('../bin/www');
+import Request from 'request';
+import Server from '../server';
 
-function start() { return server2; }
+const start = () => Server;
 start();
 
 describe('get categories', () => {
@@ -162,7 +162,7 @@ describe('to rename categories', () => {
   it('array of categories', () => {
     expect(JSON.parse(data.body)).toContain('continental');
   });
-  describe('to rename categories', () => {
+  describe('rename category', () => {
     const data2 = {};
     beforeAll((done) => {
       Request.put('http://localhost:3000/admin/category/continental/african', (error, response, body) => {
@@ -175,7 +175,7 @@ describe('to rename categories', () => {
       expect(data2.status).toBe(200);
     });
   });
-  describe('check if category have been replaced', () => {
+  describe('check if category have been renamed', () => {
     const data3 = {};
     beforeAll((done) => {
       Request.get('http://localhost:3000/admin/category', (error, response, body) => {

@@ -206,8 +206,13 @@ describe('get user order history', () => {
   it('status 200', () => {
     expect(data.status).toBe(200);
   });
-  it('array of order ids', () => {
-    expect(JSON.parse(data.body)).toContain('od-0003');
+  it('array of order objects', () => {
+    expect(JSON.parse(data.body)).toContain({
+      id: 'od-0003',
+      user: 'us-0001',
+      status: 'accepted',
+      items: [{ id: 'it-0001', qty: 1 }, { id: 'it-0002', qty: 1 }, { id: 'it-0003', qty: 1 }],
+    });
   });
 });
 
@@ -246,7 +251,12 @@ describe('posting a new user order', () => {
       expect(data2.status).toBe(200);
     });
     it('user details', () => {
-      expect(JSON.parse(data2.body)).toContain('od-0004');
+      expect(JSON.parse(data2.body)).toContain({
+        id: 'od-0004',
+        user: 'us-0001',
+        status: 'accepted',
+        items: [{ id: 'it-0001', qty: 1 }, { id: 'it-0002', qty: 1 }, { id: 'it-0003', qty: 1 }],
+      });
     });
   });
 });
@@ -254,7 +264,7 @@ describe('posting a new user order', () => {
 describe('deleting or canceling order by user', () => {
   const data = {};
   beforeAll((done) => {
-    Request.delete('http://localhost:3000/users/order/od-0001/us-0002', (error, response) => {
+    Request.delete('http://localhost:3000/users/order/od-0002/us-0002', (error, response) => {
       data.status = response.statusCode;
       done();
     });
@@ -272,7 +282,7 @@ describe('deleting or canceling order by user', () => {
       });
     });
     it('order array to not contain said order', () => {
-      expect(JSON.parse(data2.body)).toEqual([]);
+      expect(data2.status).toEqual(404);
     });
   });
 });
