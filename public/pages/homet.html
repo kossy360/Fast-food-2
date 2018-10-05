@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/stylesheets/order.css">
+    <title>Fast Food Fast | Order</title>
+</head>
+
+<body>
+    <header>
+        <h1>fast food fast</h1>
+        <h2>menu</h2>
+        <ul>
+            <li><a href="/">home</a></li>
+            <li><a href="/users/signup">signup</a></li>
+            <li><a href="/users/signin">signin</a></li>
+            <li class="cart">
+                <p class="cartButton">cart</p>
+                <p class="itemCount">0</p>
+                <div class="cartItems" display='none'>
+                    <div class="cartItemsDefault">
+                        <p>no items to show, add items to cart</p>
+                    </div>
+                    <p class="orderTotal" class="hide"></p>
+                </div>
+            </li>
+            <li class="profile">
+                <ul id="profile">
+                    <li>username</li>
+                </ul>
+            </li>
+        </ul>
+    </header>
+    <section id="orderSelect">
+        <div>
+            <header>
+                <p class="categorySwitch1" id="prev">prev</p>
+                <div class="category"></div>
+                <p class="categorySwitch2">next</p>
+            </header>
+        </div>
+        <div class="itemsContainer"></div>
+    </section>
+    <footer>copyright fast food fast</footer>
+    <script src="/javascripts/order.js"></script>
+</body>
+
+</html>

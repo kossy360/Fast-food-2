@@ -2,14 +2,13 @@
   "name": "fast-food-fast",
   "version": "1.0.0",
   "description": "api endpoints",
-  "main": "./bin/www",
+  "main": "babel-node server.js",
   "scripts": {
     "build": "babel javascripts -d build",
-    "start": "node ./bin/www",
-    "start1": "nodemon",
+    "start": "babel-node server.js",
+    "start1": "nodemon --exec npm start",
     "test": "nyc jasmine",
-    "coverage": "nyc report --reporter=text-lcov | coveralls",
-    "test1": "istanbul cover node_modules/jasmine-node/bin/jasmine-node"
+    "coverage": "nyc report --reporter=text-lcov | coveralls"
   },
   "repository": {
     "type": "git",
@@ -39,8 +38,13 @@
     "serve-static": "^1.13.2"
   },
   "devDependencies": {
-    "babel": "^6.23.0",
-    "babel-cli": "^6.26.0",
+    "@babel/cli": "^7.1.2",
+    "@babel/core": "^7.1.2",
+    "@babel/node": "^7.0.0",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/register": "^7.0.0",
+    "@istanbuljs/nyc-config-babel": "^2.0.0",
+    "babel-plugin-istanbul": "^5.0.1",
     "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
     "babel-plugin-transform-export-extensions": "^6.22.0",
     "babel-preset-env": "^1.7.0",
@@ -48,12 +52,10 @@
     "eslint": "^5.5.0",
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-import": "^2.14.0",
+    "jasmine": "^3.2.0",
     "jasmine-core": "^2.4.1",
-    "karma": "^0.13.22",
-    "karma-cli": "^0.1.2",
-    "karma-jasmine": "^0.3.7",
-    "karma-phantomjs-launcher": "^1.0.0",
     "nodemon": "^1.18.4",
-    "nyc": "^13.0.1"
+    "nyc": "^13.0.1",
+    "register": "0.0.0"
   }
 }

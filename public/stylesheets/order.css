@@ -1,0 +1,7 @@
+.selected {
+    border: solid green;
+}
+
+.hide {
+    display: none;
+}

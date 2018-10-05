@@ -1,10 +1,14 @@
 {
   "presets": [
-    [
-      "env"
+        [
+      "@babel/preset-env"
     ]
   ],
   "plugins": [
-    "transform-export-extensions"
+    "transform-export-extensions",
+    "istanbul"
+  ],
+  "ignore": [
+    "node_modules"
   ]
 }
