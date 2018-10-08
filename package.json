@@ -8,7 +8,8 @@
     "start": "babel-node server.js",
     "start1": "nodemon --exec npm start",
     "test": "nyc jasmine",
-    "coverage": "nyc report --reporter=text-lcov | coveralls"
+    "coverage": "nyc report --reporter=text-lcov | coveralls",
+    "test1": "nyc --reporter=lcov npm run test"
   },
   "repository": {
     "type": "git",
